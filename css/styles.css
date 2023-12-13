@@ -173,3 +173,51 @@ footer p a {
     color: white;
     font-weight: 700;
 }
+
+.bgAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background-color: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox {
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background-color: #1d1d1d;
+}
+
+.colorBox:hover {
+    background-color: var(--green);
+    transition: 0s;
+}
+
+.backgroundAmim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--green);
+    filter: blur(60px);
+    animation: animback 6s linear infinite;
+}
+
+@keyframes animback {
+    0% {
+        top: -60px;
+    }
+    100% {
+        top: 120%;
+    }
+}
