@@ -14,6 +14,7 @@
 }
 
 h1, h2 {
+    position: relative;
     color: white;
     text-wrap: balance;
     text-align: center;
@@ -152,9 +153,10 @@ code {
 
 footer {
     position: relative;
-    background-color: var(--gray);
+    background-color: rgba(34, 34, 34, 0.8);
     width: 100%;
     padding: 10px;
+    backdrop-filter: blur(5px);
 }
 
 footer p {
@@ -163,8 +165,9 @@ footer p {
 }
 
 footer p a {
-    color: white;
-    font-weight: 700;
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .copied {
