@@ -151,6 +151,7 @@ code {
 }
 
 footer {
+    position: relative;
     background-color: var(--gray);
     width: 100%;
     padding: 10px;
