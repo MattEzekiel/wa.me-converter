@@ -57,41 +57,12 @@ body {
     overflow: hidden;
 }
 
-#circuits {
-    mask-image: url("../circuits.svg");
-    -webkit-mask-image: url("../circuits.svg");
-    mask-size: cover;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    width: 100%;
+canvas {
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 1;
+    width: 100vw;
     height: 100vh;
-    position: absolute;
-    background-color: var(--gray);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#circuits #circle {
-    position: absolute;
-    display: block;
-    width: 200vw;
-    height: 200vh;
-    border-radius: 10%;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, var(--gray) 0%, var(--green) 35%, var(--gray) 60%);
-    animation: gradualChange 10s linear infinite;
-}
-
-@keyframes gradualChange {
-    0%, 100% {
-        opacity: 0;
-        transform: scale(2);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 main {
@@ -109,9 +80,11 @@ main {
     width: 380px;
     height: fit-content;
     padding-bottom: 20px;
-    background: rgba(45,45,45,1);
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     overflow: hidden;
+    z-index: 10;
 }
 
 .container .card::before {
@@ -136,7 +109,8 @@ main {
     position: absolute;
     inset: 2px;
     border-radius: 18px;
-    background: rgba(45,45,45,0.9);
+    background: rgba(20,20,20,0.9);
+    backdrop-filter: blur(20px);
 }
 
 .container .card div {
@@ -209,7 +183,8 @@ code {
 
 footer {
     position: relative;
-    background-color: rgba(34, 34, 34, 0.8);
+    z-index: 10;
+    background-color: rgba(20, 20, 20, 0.8);
     width: 100%;
     padding: 10px;
     backdrop-filter: blur(5px);
