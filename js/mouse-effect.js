@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.card');
+
 cards.forEach(card => {
     card.onmousemove = function (e) {
         const x = e.pageX - card.offsetLeft;

@@ -20,6 +20,23 @@ h1, h2 {
     text-align: center;
 }
 
+h1 {
+    animation: textShadow 3s ease-in-out infinite;
+}
+
+@keyframes textShadow {
+    0% {
+        text-shadow: 0 0 10px var(--green);
+    }
+    50% {
+        text-shadow: 0 0 20px var(--green);
+    }
+    100% {
+        text-shadow: 0 0 10px var(--green);
+    }
+
+}
+
 h2 {
     margin-top: 20px;
 }
@@ -29,6 +46,7 @@ b {
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +54,44 @@ body {
     min-height: 100vh;
     background: #222;
     font-family: 'Now', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+#circuits {
+    mask-image: url("../circuits.svg");
+    -webkit-mask-image: url("../circuits.svg");
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circuits #circle {
+    position: absolute;
+    display: block;
+    width: 200vw;
+    height: 200vh;
+    border-radius: 10%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, var(--gray) 0%, var(--green) 35%, var(--gray) 60%);
+    animation: gradualChange 10s linear infinite;
+}
+
+@keyframes gradualChange {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 main {
@@ -45,7 +101,7 @@ main {
 .container {
     display: grid;
     place-items: center;
-    gap: 50px;
+    gap: 10px;
 }
 
 .container .card {
@@ -176,52 +232,4 @@ footer p a {
     text-align: center;
     color: white;
     font-weight: 700;
-}
-
-.bgAnimation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(20, 1fr);
-    background-color: #1d1d1d;
-    filter: saturate(2);
-    overflow: hidden;
-}
-
-.colorBox {
-    z-index: 2;
-    filter: brightness(1.1);
-    transition: 2s ease;
-    position: relative;
-    margin: 2px;
-    background-color: #1d1d1d;
-}
-
-.colorBox:hover {
-    background-color: var(--green);
-    transition: 0s;
-}
-
-.backgroundAmim {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: var(--green);
-    filter: blur(60px);
-    animation: animback 6s linear infinite;
-}
-
-@keyframes animback {
-    0% {
-        top: -60px;
-    }
-    100% {
-        top: 120%;
-    }
 }
