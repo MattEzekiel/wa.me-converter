@@ -47,9 +47,8 @@ b {
 
 body {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    place-items: center;
     flex-direction: column;
     min-height: 100vh;
     background: #222;
@@ -182,7 +181,8 @@ code {
 }
 
 footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     z-index: 10;
     background-color: rgba(20, 20, 20, 0.8);
     width: 100%;
