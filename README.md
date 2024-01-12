@@ -6,6 +6,7 @@
 ![GitHub pull request](https://img.shields.io/github/issues-pr-raw/MattEzekiel/wa.me-converter)
 
 </div>
+
 # Phone Number to WhatsApp Link Generator
 
 This project enables the generation of direct links to WhatsApp by providing a phone number and an optional message. Below is a detailed description of the project's structure:
