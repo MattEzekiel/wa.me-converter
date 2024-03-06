@@ -40,3 +40,6 @@ This project enables the generation of direct links to WhatsApp by providing a p
 That's it! Now you can easily share WhatsApp links with your contacts.
 
 **Note:** Ensure you maintain the folder and file structure to guarantee the correct functioning of the website. If you need to make changes, consider the interdependence between HTML, CSS, and JavaScript files.
+
+## Contributing and Issue Tracking
+If you're interested in contributing to wa.me-converter or want to report an issue, please check out our [CONTRIBUTING.md](./CONTRIBUTING.md) guide for detailed information on how to get involved.
