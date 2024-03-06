@@ -1,10 +1,19 @@
 ![Readme Image](readme.jpg)
 <div align="center">
+  
+  ![GitHub issues](https://img.shields.io/github/issues/MattEzekiel/wa.me-converter)
+  ![GitHub contributors](https://img.shields.io/github/contributors/MattEzekiel/wa.me-converter)
+  [![GitHub pull-requests](https://img.shields.io/github/issues-pr/MattEzekiel/wa.me-converter)](https://GitHub.com/MattEzekiel/wa.me-converter/?WT.mc_id=academic-105485-koreyst)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com?WT.mc_id=academic-105485-koreyst)
+  
+</div>
 
+<div align="center">
+  
+[![GitHub watchers](https://img.shields.io/github/watchers/MattEzekiel/wa.me-converter)](https://GitHub.com/MattEzekiel/wa.me-converter/watchers/?WT.mc_id=academic-105485-koreyst)
+[![GitHub forks](https://img.shields.io/github/forks/MattEzekiel/wa.me-converter?style=social&label=Fork)](https://GitHub.com/MattEzekiel/wa.me-converter/network/?WT.mc_id=academic-105485-koreyst)
 ![GitHub stars](https://img.shields.io/github/stars/MattEzekiel/wa.me-converter)
-![GitHub issues](https://img.shields.io/github/issues/MattEzekiel/wa.me-converter)
-![GitHub pull request](https://img.shields.io/github/issues-pr-raw/MattEzekiel/wa.me-converter)
-
+  
 </div>
 
 # Phone Number to WhatsApp Link Generator
