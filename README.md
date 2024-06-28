@@ -16,6 +16,12 @@
   
 </div>
 
+<div align="center">
+
+  <a href="https://cafecito.app/mattezekiel" target="_blank"> <img alt="Static Badge" src="https://img.shields.io/badge/cafecito-purple?style=social&logo=buy%20me%20a%20coffee&link=https%3A%2F%2Fcafecito.app%mattezekiel"></a> <a href="https://cafecito.app/mattezekiel" target="_blank"> <img alt="Static Badge" src="https://img.shields.io/badge/buy_me_a_coffee-purple?style=social&logo=buy%20me%20a%20coffee&link=https%3A%2F%2Fwww.buymeacoffee.com%mattezekiel"></a>
+
+</div>
+
 # Phone Number to WhatsApp Link Generator
 
 This project enables the generation of direct links to WhatsApp by providing a phone number and an optional message. Below is a detailed description of the project's structure:
